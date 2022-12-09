@@ -12,9 +12,9 @@ int main(void)
 	long int c;
 	long long int d;
 	float e;
-	printf("Size of a char: %i byte(s)", (int) sizeof(a));
-	printf("Size of an int: %i byte(s)", (int) sizeof(b));
-	printf("Size of a long int: %i byte(s)", (int) sizeof(c));
-	printf("Size of a long long int: %i byte(s)", (int) sizeof(d));
-	printf("Size of a float: %i byte(s)", (int) sizeof(e));
+	printf("Size of a char: %i byte(s)\n", (int) sizeof(a));
+	printf("Size of an int: %i byte(s)\n", (int) sizeof(b));
+	printf("Size of a long int: %i byte(s)\n", (int) sizeof(c));
+	printf("Size of a long long int: %i byte(s)\n", (int) sizeof(d));
+	printf("Size of a float: %i byte(s)\n", (int) sizeof(e));
 }
