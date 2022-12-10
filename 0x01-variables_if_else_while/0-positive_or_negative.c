@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
 /**
  *main - tests whether randomly generated number is positive, negative or zero
@@ -14,9 +14,9 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n < 0)
-	   printf("%i is negative", n);
-	elif (n > 0)
-	     printf("%i is positive", n);
+		printf("%i is negative", n);
+	else if (n > 0)
+		printf("%i is positive", n);
 	else
 		printf("%i is zero", n);
 	return (0);
