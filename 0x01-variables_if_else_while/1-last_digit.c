@@ -19,7 +19,9 @@ int main(void)
 	sprintf(buffer, "%d", n);
 	ch = strlen(buffer);
 
-	char lnum = buffer[ch - 1];
+	char lnum;
+
+	lnum = buffer[ch - 1];
 
 	if (n < 0)
 	{
