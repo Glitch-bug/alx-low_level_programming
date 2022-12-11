@@ -13,14 +13,12 @@ int main(void)
 	int n;
 	int ch;
 	char buffer[50];
+	char lnum;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	sprintf(buffer, "%d", n);
 	ch = strlen(buffer);
-
-	char lnum;
-
 	lnum = buffer[ch - 1];
 
 	if (n < 0)
