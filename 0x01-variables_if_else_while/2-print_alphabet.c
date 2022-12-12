@@ -8,9 +8,9 @@
 int main(void)
 {
 	int i;
-	char letrs[53] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char letrs[27] = "abcdefghijklmnopqrstuvwxyz";
 
-	for (i = 0; i < 52; i++)
+	for (i = 0; i < 26; i++)
 	{
 		putchar(letrs[i]);
 	}
