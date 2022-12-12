@@ -19,7 +19,7 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		j = i+1
+		j = i+1;
 		for (m = 0; m < j; m++)
 		{
 			putchar(letrs[m] % 10 + '0');
