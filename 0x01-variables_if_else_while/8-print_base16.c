@@ -12,7 +12,7 @@ int main(void)
 	char abc[6] = "abcdef";
 	for (i = 0; i < 10; i++)
 	{
-		putchar(letrs[i] % 10 + '0');
+		putchar(nums[i] % 10 + '0');
 	}
 	for (i = 0; i < 6; i++)
 	{
