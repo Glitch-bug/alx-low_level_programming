@@ -13,15 +13,16 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		for (j = 0; j < 10; j++)
+		for (j = i + 1; j < 10 ; j++)
 		{
 			putchar(numrs[i] % 10 + '0');
 			putchar(numrs[j] % 10 + '0');
-		}
-		if (i < 9)
-		{
-			putchar(',');
-			putchar(' ');
+				if (i < 8)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+
 		}
 	}
 	putchar('\n');
