@@ -12,7 +12,7 @@ int main(void)
 		  59) != 59)
 	{
 		write(2, "There was an error writing to standard out\n", 44);
-		return -1;
+		return (-1);
 	}
-	return (0);
+	return (1);
 }
