@@ -20,7 +20,7 @@ int main(void)
 			{
 				putchar(numrs[i] % 10 + '0');
 				putchar(numrs[j] % 10 + '0');
-				putchar(numrs[k] % 10 + '0');101-print_comb4.c
+				putchar(numrs[k] % 10 + '0');
 				if (i < 7)
 				{
 					putchar(',');
