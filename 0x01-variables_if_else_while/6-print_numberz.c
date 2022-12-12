@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		putchar(letrs[i]%10+'0');
+		putchar(letrs[i] % 10 + '0');
 	}
 	putchar('\n');
 	return (0);
