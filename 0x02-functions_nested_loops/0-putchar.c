@@ -9,6 +9,7 @@ int main(void)
 {
 	int i = 0;
 	char mess[90] = "_putchar\n";
+
 	while (mess[i] != '\0')
 	{
 		putchar(mess[i]);
