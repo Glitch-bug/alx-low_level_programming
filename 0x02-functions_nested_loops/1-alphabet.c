@@ -1,4 +1,4 @@
-#include "main.h"
+0;10;1c0;10;1c#include "main.h"
 
 /**
  *print_alphabet - prints the alphabet in lowercase
@@ -8,7 +8,7 @@
 void print_alphabet(void)
 {
 	int i;
-	char alph[27] = "abcdefghijklmnopqrwstuvwxyz";
+	char alph[27] = "abcdefghijklmnopqrstuvwxyz";
 
 	for (i = 0; i < 26; i++)
 	{
