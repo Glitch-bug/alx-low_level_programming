@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- *main - prints the alphabet in lowercase
+ *print_alphabet - prints the alphabet in lowercase
  *Return: 0
  */
 
-void print_alphabet (void)
+void print_alphabet(void)
 {
 	int i;
 	char alph[27] = "abcdefghijklmnopqrwstuvwxyz";
@@ -14,5 +14,5 @@ void print_alphabet (void)
 	{
 		_putchar(alph[i]);
 	}
+	_putchar("\n");
 }
-
