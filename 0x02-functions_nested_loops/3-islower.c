@@ -1,6 +1,5 @@
 
-/**
- *main - checks if input is a lowercase character
+/**main - checks if input is a lowercase character
  *
  *Return: 1 if lowercase or 0 if not
  */
@@ -8,13 +7,11 @@
 int _islower(int c)
 {
 	int i;
-	int alph[27]= {"a","b", "c", "d", "e", "f", "g", "h", "i",
-		       "j", "k","l", "m","n","o","p","q","r", "s", "t", "u",
-		       "v", "x", "y", "z"};
+	char alph[27]= "abcdefghijklmnoqrstuvwxyz"
 
 	for (i = 0; i < 26; i++)
 	{
-		if (c == alph[i])
+		if (c == (int) alph[i])
 		{
 			return (1);
 		}
