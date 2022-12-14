@@ -6,7 +6,7 @@
  *Return: 1 if alphabet or 0 if not
  */
 
-int _islower(int c)
+int _isalpha(int c)
 {
 	int i;
 	char alph[53] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
