@@ -7,7 +7,8 @@
 
 int _islower(int c)
 {
-	int alph [27]= "abcdefghijklmnopqrstuvxyz";
+	int i;
+	int alph[27]= "abcdefghijklmnopqrstuvxyz";
 
 	for (i = 0; i < 26; i++)
 	{
