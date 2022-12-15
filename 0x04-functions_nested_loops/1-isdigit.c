@@ -9,7 +9,7 @@
 int _isdigit(int c)
 {
 	int i;
-	int nums[11] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}
+	int nums[11] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
 
 		for(i = 0; i < 10; i++)
 		{
