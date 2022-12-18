@@ -19,9 +19,13 @@ void jack_bauer(void)
 	{
 		printf("%02d:%02d", min, sec);
 		printf("\n");
-		if (sec < 61)
+		if (sec < 60)
 		{
 			sec++;
+		}
+		else if (min == 24)
+		{
+			break;
 		}
 		else
 		{
