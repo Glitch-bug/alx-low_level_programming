@@ -15,17 +15,13 @@ void jack_bauer(void)
 	min = 0;
 	sec = 0;
 
-	while (min < 25)
+	while (min < 24)
 	{
 		printf("%02d:%02d", min, sec);
 		printf("\n");
-		if (sec < 60)
+		if (sec < 59)
 		{
 			sec++;
-		}
-		else if (min == 24)
-		{
-			break;
 		}
 		else
 		{
