@@ -18,6 +18,6 @@ int print_last_digit(int c)
 	ch = strlen(buffer);
 	lnum = buffer[ch - 1];
 	rnum = (int)(lnum) - 48;
-	putchar(rnum + 0);
+	printf("%d", rnum);
 	return (rnum);
 }
