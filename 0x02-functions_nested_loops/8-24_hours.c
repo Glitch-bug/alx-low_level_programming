@@ -15,7 +15,7 @@ void jack_bauer(void)
 	min = 0;
 	sec = 0;
 
-	whil e(min < 25)
+	while (min < 25)
 	{
 		printf("%02d:%02d", min, sec);
 		if (sec < 61)
