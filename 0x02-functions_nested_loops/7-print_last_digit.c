@@ -15,7 +15,7 @@ int print_last_digit(int c)
 
 	sprintf(buffer, "%d", c);
 	ch = strlen(buffer);
-	lnum = buffer[ch - 1];
+	lnum[0] = buffer[ch - 1];
 	printf("%d", atoi(lnum));
-	return (lnum);
+	return (atoi(lnum));
 }
