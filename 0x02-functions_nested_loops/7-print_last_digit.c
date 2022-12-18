@@ -19,6 +19,6 @@ int print_last_digit(int c)
 	ch = strlen(buffer);
 	lnum = buffer[ch - 1];
 	rnum = (int)(lnum) - 48;
-	_putchar(rnum + '0';
+	_putchar(rnum + '0');
 	return (rnum);
 }
