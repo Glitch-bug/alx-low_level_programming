@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "main.h"
 /**
  *print_last_digit - prints last digit of integer input
  *@c: integer input
@@ -18,6 +19,6 @@ int print_last_digit(int c)
 	ch = strlen(buffer);
 	lnum = buffer[ch - 1];
 	rnum = (int)(lnum) - 48;
-	printf("\b%d", rnum);
+	_putchar(rnum + '0';
 	return (rnum);
 }
