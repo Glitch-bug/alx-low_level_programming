@@ -15,9 +15,9 @@ void jack_bauer(void)
 	min = 0;
 	sec = 0;
 
-	for (min ; min < 25;)
+	for (min; min < 25;min)
 	{
-		printf("%02d:%02d", min, c);
+		printf("%02d:%02d", min, sec);
 		if(sec < 61)
 		{
 			sec++;
