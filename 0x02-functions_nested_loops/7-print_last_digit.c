@@ -11,11 +11,11 @@ int print_last_digit(int c)
 {
 	int ch;
 	char buffer[50];
-	char lnum;
+	char lnum[1];
 
 	sprintf(buffer, "%d", c);
 	ch = strlen(buffer);
-	lnum = atoi(buffer[ch - 1]);
-	printf("%d", lnum);
+	lnum = buffer[ch - 1];
+	printf("%d", atoi(lnum));
 	return (lnum);
 }
