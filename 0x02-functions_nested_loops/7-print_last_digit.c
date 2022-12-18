@@ -14,12 +14,10 @@ int print_last_digit(int c)
 	char buffer[50];
 	char lnum;
 
-	putchar('n');
 	sprintf(buffer, "%d", c);
 	ch = strlen(buffer);
 	lnum = buffer[ch - 1];
 	rnum = (int)(lnum) - 48;
-	printf("%d", rnum);
-	putchar('t');
+	printf("\b%d", rnum);
 	return (rnum);
 }
