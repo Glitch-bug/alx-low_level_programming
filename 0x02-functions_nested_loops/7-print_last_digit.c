@@ -14,6 +14,7 @@ int print_last_digit(int c)
 	char buffer[50];
 	char lnum;
 
+	putchar('n');
 	sprintf(buffer, "%d", c);
 	ch = strlen(buffer);
 	lnum = buffer[ch - 1];
