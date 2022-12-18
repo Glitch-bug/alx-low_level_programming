@@ -10,12 +10,14 @@
 int print_last_digit(int c)
 {
 	int ch;
+	int rnum;
 	char buffer[50];
-	char lnum[0];
+	char lnum;
 
 	sprintf(buffer, "%d", c);
 	ch = strlen(buffer);
-	lnum[0] = buffer[ch - 1];
-	printf("%d", atoi(lnum));
-	return (atoi(lnum));
+	snum = buffer[ch - 1];
+	rnum = (int)(lnum)-48;
+	printf("%d", rnum);
+	return (rnum);
 }
