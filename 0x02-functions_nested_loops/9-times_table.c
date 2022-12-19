@@ -16,9 +16,15 @@ void times_table(void)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			printf("  ");
 			mult = i * j;
-			printf("%d,",mult);
+			if (j > 0)
+			{
+				printf("% 3d,",mult);
+			}
+			else
+			{
+				printf("%d,", mult);
+			}
 		}
 		printf("\n");
 	}
