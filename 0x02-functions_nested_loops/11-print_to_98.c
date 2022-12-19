@@ -23,10 +23,11 @@ void print_to_98(int n)
 			}
 			n++;
 		}
+		printf("\n");
 	}
 	else
 	{
-		while (n < 97)
+		while (n > 97)
 		{
 			if (n < 98)
 			{
@@ -39,5 +40,6 @@ void print_to_98(int n)
 			n--;
 		}
 	}
+	printf("\n");
 
 }
