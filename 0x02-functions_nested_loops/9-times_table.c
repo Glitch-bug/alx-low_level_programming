@@ -21,7 +21,7 @@ void times_table(void)
 			{
 				printf("% 3d,", mult);
 			}
-			else if (j > 9)
+			else if (j == 9)
 			{
 				printf("% 3d", mult);
 			}
