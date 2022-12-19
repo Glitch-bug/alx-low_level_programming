@@ -17,9 +17,13 @@ void times_table(void)
 		for (j = 0; j < 10; j++)
 		{
 			mult = i * j;
-			if (j > 0)
+			if (j > 0 && j < 9)
 			{
-				printf("% 3d,",mult);
+				printf("% 3d,", mult);
+			}
+			else if (j > 9)
+			{
+				printf("% 3d", mult);
 			}
 			else
 			{
