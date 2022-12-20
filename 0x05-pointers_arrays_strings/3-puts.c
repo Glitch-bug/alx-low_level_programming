@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 
 /**
@@ -9,9 +10,10 @@
 
 void _puts(char *str)
 {
-	int len = _strlen(str);
+	int len;
 	int i;
 
+	len = _strlen(str);
 	for (i = 0; i < len; i++)
 	{
 		_putchar(*str);
