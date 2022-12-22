@@ -1,6 +1,6 @@
 #include <string.h>
 #include "main.h"
-
+#include <stdio.h>
 /**
  *puts_half - prints the last half of a string
  *@str: string to be halfed
@@ -29,5 +29,5 @@ void puts_half(char *str)
 		hlf++;
 		hlfer++;
 	}
-	_puts(hlfer);
+	puts(hlfer);
 }
