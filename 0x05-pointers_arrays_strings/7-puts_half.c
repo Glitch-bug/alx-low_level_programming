@@ -19,12 +19,12 @@ void puts_half(char *str)
 	}
 	else
 	{
-		hlf = (len + 1)/ 2;
+		hlf = (len + 1) / 2;
 	}
 
-	while (len > hlf)
+	while (len >= hlf)
 	{
-		_putchar(str[hlf - 1]);
+		_putchar(str[hlf]);
 		hlf++;
 	}
 }
