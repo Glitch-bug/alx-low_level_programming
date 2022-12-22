@@ -10,6 +10,7 @@ void puts_half(char *str)
 {
 	int len;
 	int hlf;
+	char *hlfer;
 
 	len = strlen(str);
 
@@ -24,8 +25,9 @@ void puts_half(char *str)
 
 	while (len >= hlf)
 	{
-		_putchar(str[hlf]);
+		*hlfer = str[hlf];
 		hlf++;
+		hlfer++;
 	}
-	_putchar('\n');
+	_puts(hlfer);
 }
