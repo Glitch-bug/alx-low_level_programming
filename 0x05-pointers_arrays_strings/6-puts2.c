@@ -3,12 +3,12 @@
 #include <string.h>
 
 /**
- *_puts2 - Prints every other character in a string and then a newline
+ *puts2 - Prints every other character in a string and then a newline
  *@str: string to be printed
  *Return: void
  */
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int len;
 	int i;
