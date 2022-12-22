@@ -1,6 +1,11 @@
 #include <string.h>
 #include "main.h"
 
+/**
+ *puts_half - prints the last half of a string
+ *@str: string to be halfed
+ */
+
 void puts_half(char *str)
 {
 	int len;
@@ -20,5 +25,6 @@ void puts_half(char *str)
 	while (len > hlf)
 	{
 		_putchar(str[hlf - 1]);
+		hlf++;
 	}
 }
