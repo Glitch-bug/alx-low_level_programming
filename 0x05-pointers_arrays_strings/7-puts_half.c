@@ -10,7 +10,7 @@ void puts_half(char *str)
 {
 	int len;
 	int hlf;
-	char *hlfer;
+	int count;
 
 	len = strlen(str);
 
@@ -22,12 +22,13 @@ void puts_half(char *str)
 	{
 		hlf = (len + 1) / 2;
 	}
+	count = 0;
 
 	while (len >= hlf)
 	{
-		hlfer = str[hlf];
-		hlf++;
-		hlfer++;
+		_putchar(*(str+hlf+count));
+		len--;
+		count++;
 	}
 	puts(hlfer);
 }
