@@ -30,5 +30,5 @@ void puts_half(char *str)
 		len--;
 		count++;
 	}
-	puts(hlfer);
+	_putchar('\n');
 }
