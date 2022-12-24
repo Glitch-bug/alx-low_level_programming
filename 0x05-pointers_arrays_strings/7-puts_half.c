@@ -24,7 +24,7 @@ void puts_half(char *str)
 	}
 	count = 0;
 
-	while (len >= hlf)
+	while (len > hlf)
 	{
 		_putchar(*(str + hlf + count));
 		len--;
