@@ -10,7 +10,7 @@ int main(void)
 	int i;
 	int max = 50;
 	long num = 1;
-        long last = 1;
+	long last = 1;
 	long hold = 0;
 
 	for (i = 0; i < max; i++)
