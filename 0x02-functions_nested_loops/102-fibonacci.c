@@ -9,19 +9,19 @@ int main(void)
 {
 	int i;
 	int max = 50;
-	int num = 1;
-	int last = 1;
-	int hold = 0;
+	long num = 1;
+        long last = 1;
+	long hold = 0;
 
 	for (i = 0; i < max; i++)
 	{
 		if (i == max - 1)
 		{
-			printf("%d\n", num);
+			printf("%ld\n", num);
 		}
 		else
 		{
-			printf("%d, ", num);
+			printf("%ld, ", num);
 		}
 		hold = num;
 		num += last;
