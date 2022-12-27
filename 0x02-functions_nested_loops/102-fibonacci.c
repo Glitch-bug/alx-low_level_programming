@@ -4,14 +4,15 @@
  *main - prints first 50 numbers of fibonacci sequence
  */
 
-void main(void)
+int main(void)
 {
+	int i;
 	int max = 50;
 	int num = 1;
 	int last = 1;
 	int hold = 0;
 
-	for (i = 0; i < 50; i++)
+	for (i = 0; i < max; i++)
 	{
 		printf("%d\n", num);
 		hold = num;
