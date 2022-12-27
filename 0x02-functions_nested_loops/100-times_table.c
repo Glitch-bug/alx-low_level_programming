@@ -29,7 +29,7 @@ void print_times_table(int n)
 				{
 					printf("% 4d", mult);
 				}
-				else if (j == n && n = 0)
+				else if (j == n && n == 0)
 				{
 					printf("%d", mult);
 				}
