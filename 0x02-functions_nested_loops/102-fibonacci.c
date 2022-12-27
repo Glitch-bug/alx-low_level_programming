@@ -2,6 +2,7 @@
 
 /**
  *main - prints first 50 numbers of fibonacci sequence
+ *Return: zero
  */
 
 int main(void)
@@ -19,4 +20,5 @@ int main(void)
 		num += last;
 		last = hold;
 	}
+	return (0);
 }
