@@ -31,7 +31,7 @@ void print_times_table(int n)
 				}
 				else if (j == n && n = 0)
 				{
-					printf("%d");
+					printf("%d", mult);
 				}
 				else
 				{
