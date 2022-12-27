@@ -15,7 +15,14 @@ int main(void)
 
 	for (i = 0; i < max; i++)
 	{
-		printf("%d\n", num);
+		if (i == max - 1)
+		{
+			printf("%d\n", num);
+		}
+		else
+		{
+			printf("%d, ", num);
+		}
 		hold = num;
 		num += last;
 		last = hold;
