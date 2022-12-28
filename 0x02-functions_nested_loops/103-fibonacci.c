@@ -8,24 +8,22 @@
 int main(void)
 {
 	int i;
-	int max = 50;
+	int max = 4000000;
 	long num = 1;
 	long last = 1;
 	long hold = 0;
+	long even = 0;
 
-	for (i = 0; i < max; i++)
+	for (i = 0; num < max; i++)
 	{
-		if (i == max - 1)
-		{
-			printf("%ld\n", num);
-		}
-		else
-		{
-			printf("%ld, ", num);
-		}
 		hold = num;
 		num += last;
 		last = hold;
+		if (num % 2 == 0)
+		{
+			even += num;
+		}
 	}
+	printf("%ld\n", even);
 	return (0);
 }
