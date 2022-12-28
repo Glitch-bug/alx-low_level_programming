@@ -9,19 +9,19 @@ int main(void)
 {
 	int i;
 	int max = 98;
-        long num = 1;
-        long last = 1;
-	long hold = 0;
+        unsigned long num = 1;
+        unsigned long last = 1;
+	unsigned long hold = 0;
 
 	for (i = 0; i < max; i++)
 	{
 		if (i == max - 1)
 		{
-			printf("%ld\n", num);
+			printf("%lu\n", num);
 		}
 		else
 		{
-			printf("%ld, ", num);
+			printf("%lu, ", num);
 		}
 		hold = num;
 		num += last;
