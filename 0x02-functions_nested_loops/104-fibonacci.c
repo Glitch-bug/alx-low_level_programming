@@ -17,11 +17,11 @@ int main(void)
 	{
 		if (i == max - 1)
 		{
-			printf("%ld\n", num);
+			printf("%d\n", num);
 		}
 		else
 		{
-			printf("%ld, ", num);
+			printf("%d, ", num);
 		}
 		hold = num;
 		num += last;
