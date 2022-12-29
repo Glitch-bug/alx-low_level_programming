@@ -31,4 +31,5 @@ char *_strcat(char *dest, char *src)
 		hold[i] = src[i- n];
 	}
 	dest = &hold;
+	return (dest);
 }
