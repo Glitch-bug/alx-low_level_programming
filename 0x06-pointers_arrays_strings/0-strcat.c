@@ -10,23 +10,25 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char *ptr;
-	int len;
 	int i;
+	int f;
+	int m;
+	int n;
 
-	ptr = dest;
-	while (*ptr)
+
+	char hold[1000] = "";
+
+
+	f = strlen(dest);
+	m = strlen(src);
+	n = f-1;
+	for (i = 0; i < f; i++)
 	{
-		ptr++;
+		hold[i] = dest[i];
 	}
-
-	while (*src)
+	for (i = n; i <= (n)+(m); i++)
 	{
-		*ptr = *src;
-		ptr++;
-		src++;
+		hold[i] = src[i- n];
 	}
-
-	return (dest);
-
+	dest = &hold;
 }
