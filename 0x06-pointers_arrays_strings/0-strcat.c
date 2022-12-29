@@ -21,15 +21,15 @@ char *_strcat(char *dest, char *src)
 
 	f = strlen(dest);
 	m = strlen(src);
-	n = f-1;
+	n = f;
 	for (i = 0; i < f; i++)
 	{
 		hold[i] = dest[i];
 	}
-	for (i = n; i <= (n)+(m); i++)
+	for (i = n; i <= (n + m); i++)
 	{
-		hold[i] = src[i- n];
+		hold[i] = src[i - n];
 	}
-	dest = &hold;
+	memcpy(dest, hold, strlen(hold));
 	return (dest);
 }
