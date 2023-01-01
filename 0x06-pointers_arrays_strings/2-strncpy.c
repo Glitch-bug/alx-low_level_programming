@@ -17,14 +17,7 @@ char *_strncpy(char *dest, char *src, int n)
 	start = dest;
 	for (i = 0; (i < n) && (*src); i++)
 	{
-		*dest = *src;
-		src++;
-		dest++;
-	}
-
-	for (i; dest != start; i--)
-	{
-		dest--;
+		*(dest + i) = *(src + i);
 	}
 
 	return (dest);
