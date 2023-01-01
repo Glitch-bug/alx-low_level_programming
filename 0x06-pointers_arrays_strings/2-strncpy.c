@@ -22,7 +22,7 @@ char *_strncpy(char *dest, char *src, int n)
 		dest++;
 	}
 
-	for (i;dest != start; i--)
+	for (i; dest != start; i--)
 	{
 		dest--;
 	}
