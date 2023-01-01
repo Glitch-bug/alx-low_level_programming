@@ -11,10 +11,8 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *start;
 	int i;
 
-	start = dest;
 	for (i = 0; (i < n) && (*src); i++)
 	{
 		*(dest + i) = *(src + i);
