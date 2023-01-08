@@ -6,7 +6,8 @@
 
 void reverse_array(int *a, int n)
 {
-	int s[n + 1];
+
+	int s[1000];
 	int i;
 
 	for (i = 0; i < n; i++)
