@@ -1,13 +1,14 @@
 /**
  * char *cap_string -  capitalizes all words of a string.
  * @s: string
- * Returns: capitalized string
+ * Return: capitalized string
  */
 
 
 char *cap_string(char *s)
 {
 	char *r = s;
+
 	while (*s)
 	{
 		if (*s > 96 && *s < 123)
