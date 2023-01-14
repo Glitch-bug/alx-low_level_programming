@@ -4,9 +4,11 @@
  * main - prints the number of arguements
  *@argc: int represent number of arguements
  *@argv: array of pointers
+ *Return: zero
  */
 
-void main(int argc, char *argv[])
+int main(int argc, __attribute__((unused)) char *argv[])
 {
-	printf("%d", argc - 1);
+	printf("%d\n", argc - 1);
+	return (0);
 }
