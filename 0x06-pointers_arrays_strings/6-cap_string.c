@@ -7,7 +7,7 @@
 char *cap_string(char *str)
 {
 	int cap = 1;
-	char sep[] = " ,;.!?\"(){}";
+	char sep[] = "\n\t ,;.!?\"(){}";
 	int i;
 	char *hold = str;
 
