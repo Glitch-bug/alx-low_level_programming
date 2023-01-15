@@ -20,7 +20,7 @@ char *cap_string(char *str)
 			cap = 0;
 			*str -= 32;
 		}
-		else if (cap == 1 && (*str >= 65 && *str <= 90))
+		else
 		{
 			cap = 0;
 		}
