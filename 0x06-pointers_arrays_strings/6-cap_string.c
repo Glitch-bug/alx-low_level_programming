@@ -1,16 +1,18 @@
 /**
-0;10;1c * cap_string - capitalizes all words of a string
- * @char: string to be capitalized
+ * cap_string - capitalizes all words of a string
+ * @str: string to be capitalized
  * Return: A pointer to the capitalized string
  */
 
 char *cap_string(char *str)
 {
-	int cap = 0;
-	char sep[] = " ,;.!?\"(){}";
+	int cap = 1;
+	char sep[];
 	int i;
 	char *hold = str;
 
+
+	sep  = " ,;.!?\"(){}";
 	while (*str)
 	{
 		i = 0;
@@ -18,7 +20,8 @@ char *cap_string(char *str)
 		{
 			cap = 0;
 			*str -= 32;
-		}else if (cap == 1 && (*str >= 65 && *str <= 90))
+		}
+		else if (cap == 1 && (*str >= 65 && *str <= 90))
 		{
 			cap = 0;
 		}
