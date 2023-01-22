@@ -1,4 +1,4 @@
-#include <stddef.h>
+0;10;1c#include <stddef.h>
 #include <stdlib.h>
 /**
  * create_array - Write a program that creates and array of chars
@@ -22,14 +22,14 @@ char *create_array(unsigned int size, char c)
 
 	for (; i < size; i++)
 	{
-		*r = c;
-		if (r == NULL)
+
+		if (!r[i])
 		{
 			return (NULL);
 		}
-		r++;
+		r[i] = c;
 
 	}
-	r = hold;
+
 	return (r);
 }
