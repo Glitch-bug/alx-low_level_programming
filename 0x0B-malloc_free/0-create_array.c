@@ -22,11 +22,11 @@ char *create_array(unsigned int size, char c)
 	for (; i < size; i++)
 	{
 		r[i] = c;
-	}
+		if (r == NULL)
+		{
+			return (NULL);
+		}
 
-	if (r == NULL)
-	{
-		return (NULL);
 	}
 	return (r);
 }
