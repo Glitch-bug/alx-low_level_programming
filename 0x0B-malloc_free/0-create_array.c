@@ -1,4 +1,4 @@
-0;10;1c#include <stddef.h>
+#include <stddef.h>
 #include <stdlib.h>
 /**
  * create_array - Write a program that creates and array of chars
