@@ -1,6 +1,8 @@
 #include <stddef.h>
 #include <string.h>
 #include <stdlib.h>
+
+#define strlens(s) (s == NULL ? 0 : strlen(s))
 /**
  * _strdup - a function that returns a pointer to a newly allocated
  *space in memory, which contains a copy of the string given as a parameter
@@ -11,7 +13,7 @@
 char *_strdup(char *str)
 {
 	int i = 0;
-	char *copy = malloc(sizeof(*str) * strlen(str));
+	char *copy = malloc(sizeof(char) * strlen(str));
 
 	if (copy == NULL)
 	{
