@@ -2,7 +2,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define strlens(s) (s == NULL ? 0 : strlen(s))
 /**
  * _strdup - a function that returns a pointer to a newly allocated
  *space in memory, which contains a copy of the string given as a parameter
