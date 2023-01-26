@@ -1,3 +1,4 @@
+
 #include <string.h>
 #include <stdlib.h>
 #include <stddef.h>
@@ -30,15 +31,15 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	for (;s1[i]; i++)
+	for (; s1[i]; i++)
 	{
 		conc[i] = s1[i];
 	}
 
-	for (;s2[j]; j++)
+	for (; s2[j]; j++)
 	{
-		conc[i+j] = s2[j];
+		conc[i + j] = s2[j];
 	}
 	conc[i + j] = '\0';
-	return conc;
+	return (conc);
 }
