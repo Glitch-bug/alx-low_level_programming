@@ -2,6 +2,7 @@
 
 /**
  * print_diagonal - a function that draws a diagonal line on the terminal.
+ * @n: determines height of the diagonal
  */
 
 void print_diagonal(int n)
