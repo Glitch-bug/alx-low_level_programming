@@ -7,8 +7,8 @@
  * Return: int power of ten
  */
 
-unsigned int reduce( unsigned int left);
-unsigned int reduce( unsigned int left)
+unsigned int reduce(unsigned int left);
+unsigned int reduce(unsigned int left)
 {
 	unsigned int div = 10;
 	unsigned int count = 0;
@@ -39,8 +39,7 @@ void print_number(int n)
 		_putchar('-');
 	}
 
-	abs_n = n < 0 ? -((unsigned int)(n))
-                           : +((unsigned int)(n));
+	abs_n = n < 0 ? -((unsigned int)(n)) : +((unsigned int)(n));
 
 	size = reduce(abs_n);
 
