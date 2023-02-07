@@ -7,11 +7,11 @@
  * Return: int power of ten
  */
 
-int reduce(int left);
-int reduce(int left)
+unsigned int reduce( unsigned int left);
+unsigned int reduce( unsigned int left)
 {
-	int div = 10;
-	int count = 0;
+	unsigned int div = 10;
+	unsigned int count = 0;
 
 	while (left > 9)
 	{
@@ -29,28 +29,33 @@ int reduce(int left)
 
 void print_number(int n)
 {
-	int size = 1;
-	int fox = 1;
-	int i;
+	unsigned int size = 1;
+	unsigned int fox = 1;
+	unsigned int i;
+	unsigned int abs_n;
+
 	if (n < 0)
 	{
 		_putchar('-');
-		n *= -1;
 	}
-	size = reduce(n);
+
+	abs_n = n < 0 ? -((unsigned int)(n))
+                           : +((unsigned int)(n));
+
+	size = reduce(abs_n);
 
 	for (i = 0; i < size; i++)
 	{
 		fox = fox * 10;
 	}
-	_putchar((n / fox) + 48);
-	n = n % fox;
+	_putchar((abs_n / fox) + 48);
+	abs_n = abs_n % fox;
 
 	while (fox >= 10)
 	{
 		fox = fox / 10;
-		_putchar((n / fox) + 48);
-		n = n % fox;
+		_putchar((abs_n / fox) + 48);
+		abs_n = abs_n % fox;
 	}
 
 }
