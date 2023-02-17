@@ -10,7 +10,7 @@ char *leet(char *c)
 	int i;
 	char *s;
 	char list[] = {'a', 'e', 'o', 't', 'l'};
-	int num_list[] = {52, 51, 48, 55, 49};
+	int num_list[] = {'4', '3', '0', '7', '1'};
 
 	s = c;
 	while (*c)
