@@ -1,3 +1,5 @@
+char *rot13(char *);
+void print_number(int n);
 char *leet(char *);
 char *string_toupper(char *);
 char *_strcat(char *dest, char *src);

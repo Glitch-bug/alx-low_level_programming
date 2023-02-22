@@ -34,6 +34,7 @@ char *rot13(char *str)
 			if (line[j] == str[i])
 			{
 				str[i] = warped[j];
+				break;
 			}
 		}
 	}
