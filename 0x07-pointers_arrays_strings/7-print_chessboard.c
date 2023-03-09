@@ -13,7 +13,7 @@ void print_chessboard(char board[][8])
 	int i = 0;
 	int end = strlen(*board);
 
-	while (i < end * count)
+	while (i < end)
 	{
 		if ((i != 0) && (i % count == 0))
 		{
