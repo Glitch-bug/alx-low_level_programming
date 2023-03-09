@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+0;10;1c#include <string.h>
 #include "main.h"
 
 /**
@@ -13,9 +13,9 @@ void print_chessboard(char board[][8])
 	int i = 0;
 	int end = strlen(*board);
 
-	while (i < end)
-        {
-		if((i != 0) && (i % count == 0))
+	while (i < end * count)
+	{
+		if ((i != 0) && (i % count == 0))
 		{
 			_putchar('\n');
 		}
