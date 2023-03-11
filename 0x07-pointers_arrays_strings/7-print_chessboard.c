@@ -10,14 +10,11 @@
 void print_chessboard(char board[][8])
 {
 	int i = 0;
-	int count = 1;
 
-	while (count < 2)
+	while (((*(*board + i)) > -1))
 	{
 		if (i != 0 && (i % 8 == 0))
 			_putchar('\n');
-		else if ((*(*board + i)) == 'R')
-			count++;
 		_putchar(*(*board + i));
 		i++;
 	}
