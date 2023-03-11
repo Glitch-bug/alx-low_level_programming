@@ -10,7 +10,7 @@ void print_chessboard(char board[][8])
 {
 	int i = 0;
 
-	while (((*(*board + i)) > -1))
+	while (((*(*board + i)) > 31))
 	{
 		if (i != 0 && (i % 8 == 0))
 			_putchar('\n');
