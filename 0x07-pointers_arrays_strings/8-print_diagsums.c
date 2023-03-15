@@ -2,31 +2,6 @@
 #include <unistd.h>
 
 /**
- * print_diagsums - prints the sum of the two diagonals of a
- * square matrix of integers
- * @a: a pointer to the sqaure matrix
- * @size: the size of the matrix
- */
-void print_diagsums(int *a, int size)
-{
-	int left = 0;
-	int right = 0;
-	int i = 0;
-
-	while (i < size)
-	{
-		left += *(a + (size * i) + i);
-		right += (*(a + (size * i) + (size - i - 1)));
-		i++;
-	}
-	print_number(left);
-	_putchar(',');
-	_putchar(' ');
-	print_number(right);
-	_putchar('\n');
-}
-
-/**
  * _putchar - writes the character c to stdout
  * @c: The character to print
  *
@@ -65,7 +40,7 @@ unsigned int reduce(unsigned int left)
  * print_number - a function that prints an integer.
  * @n: the integer
  */
-
+void print_number(int n);
 void print_number(int n)
 {
 	unsigned int size = 1;
@@ -97,4 +72,29 @@ void print_number(int n)
 		abs_n = abs_n % fox;
 	}
 
+}
+
+/**
+ * print_diagsums - prints the sum of the two diagonals of a
+ * square matrix of integers
+ * @a: a pointer to the sqaure matrix
+ * @size: the size of the matrix
+ */
+void print_diagsums(int *a, int size)
+{
+	int left = 0;
+	int right = 0;
+	int i = 0;
+
+	while (i < size)
+	{
+		left += *(a + (size * i) + i);
+		right += (*(a + (size * i) + (size - i - 1)));
+		i++;
+	}
+	print_number(left);
+	_putchar(',');
+	_putchar(' ');
+	print_number(right);
+	_putchar('\n');
 }
