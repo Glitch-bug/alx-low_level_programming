@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <math.h>
 
-int is_prime(int n);
+int is_prime(long n);
 
 /**
  * is_prime - tells if a number is prime or not
  * @n: the number that may or may not be prime
  * Return: 1 for prime numbers 0 otherwise
  */
-int is_prime(int n)
+int is_prime(long n)
 {
 	long root;
 	long i;
