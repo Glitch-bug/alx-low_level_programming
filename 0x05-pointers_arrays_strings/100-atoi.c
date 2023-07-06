@@ -44,7 +44,7 @@ int _atoi(char *s)
 	}
 	end = i;
 	i = start;
-	if (neg > pos)
+	if (neg % 2 != 0 && neg != 0)
 	{
 		charge = -1;
 	}
