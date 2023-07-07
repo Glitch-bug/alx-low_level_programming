@@ -17,7 +17,7 @@ int _atoi(char *s)
 	int num_end = 58;
 	int end = 0;
 	int charge = 1;
-	int final = 0;
+	unsigned int final = 0;
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
